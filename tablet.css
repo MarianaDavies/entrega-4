@@ -1,0 +1,105 @@
+    header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 200px;
+        
+    }
+    header nav {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .list-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 96%;
+        padding: 1px;
+        height: 100px;
+        gap: 1px;
+        background-image: none;
+    }
+    .item-menu {
+        width: 100px;
+        font-size:0.9rem;
+        margin: 0;
+        padding: 0;
+
+    }
+    label {
+        display: none;
+    }
+
+    .about-titles {
+        flex-direction: row;
+    }
+    .about-titles h1 {
+        font-size: 3rem;
+    }
+    .about-me-img {
+        width: 27%;
+    }
+    .pin-container {
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .pin-container img {
+        width: 30%;
+    }
+    .portfolio-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .proyect p {
+        margin-top: 20px;
+        font-size: 1.3rem;
+    }
+    .skills-item {
+        width: 210px;
+        height: 210px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .skills-item h3{
+        font-size: 1.4rem;
+    }
+    .skills-item img {
+        width: 45%;
+    }
+    .skills-item p {
+        font-size: 1rem;
+        max-width: 200px;
+    }
+
+    .workflow-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .workflow-container h3 {
+        width: 100%;
+        text-align: center;
+    }
+    .workflow-container .flow-img {
+        width: 100%;
+        text-align: center;
+    }
+    .workflow-container ul {
+        margin-right: 150px;
+    }
+    .workflow-container .btn-submit {
+        margin-bottom: 50px;
+    }
+

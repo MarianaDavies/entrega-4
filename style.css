@@ -1,0 +1,429 @@
+:root {
+    --extra-light: 200;
+    --light:300;
+    --regular:400;
+    --medium: 500;
+    --bold: 700;
+    --dargk-green: #283618;
+    --medium-green: #606c38;
+    --orange: #f26b21;
+    --light-orange: #f3c053;
+    --deep-red: #a0361b;
+    --sand: #fefae0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*img {
+    width: 100%;
+    height: auto;
+}
+body {
+    width: 100vw;
+    max-height: 100%;
+    max-width: 100%;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--dargk-green);
+    font-size: 62.5%;
+}
+main {
+    width: 100%;
+    height: 100%;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+header nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header nav .list-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.bars-container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.item-menu {
+    width: 100%;
+    font-size: 1.4rem;
+    padding: 1.1rem;
+    order: 2;
+    display: block;
+}
+.item-menu a {
+    color: var(--sand);
+    text-transform: uppercase;
+}
+.item-menu a:hover {
+    color: var(--orange);
+    transition: all .4s;
+    border-bottom: 2px solid var(--medium-green);
+    padding: 5px;
+}
+
+.fa-solid {
+    cursor: pointer;
+    color: var(--sand);
+    font-size: 2.5rem;
+}
+.menu-toggle {
+    display: none;
+}
+.list-menu {
+    display: none;
+    text-align: center;
+    margin: 1.2rem auto;
+    background-image: url(assets/symbol-scatter-haikei.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 20px;
+}
+
+.menu-toggle:checked + .list-menu {
+    display: none;
+}
+
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 30px auto;
+}
+.about-titles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-titles h1 {
+    text-align: center;
+    color: var(--sand);
+    font-size: 2.5rem;
+    font-weight: var(--light);
+    padding: 15px;
+    text-shadow: 3px 3px var(--medium-green);
+}
+.about-titles p {
+    color: #f26b21;
+    font-size: 1.5rem;
+    padding: 0px 10px;
+    border-left: 5px solid var(--medium-green);
+    border-radius: 2px;
+    margin: 20px;
+}
+.about-me-img {
+    width: 50%;
+    border-top-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    /* border: 5px solid #1a230f; */
+    box-shadow: 5px 5px  #f3c053;
+}
+.pin-container {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pin-container img {
+    width: 15%;
+    padding: 10px;
+    box-shadow: 0px 0px 10px var(--medium-green);
+    border-radius: 50%;
+}
+.pin-container a {
+    color: #f3c053;
+    font-size: 1rem;
+    font-weight: var(--extra-light);
+    padding-left: 15px;
+    cursor: pointer;
+}
+
+h2 {
+    color: var(--sand);
+    font-size: 1.7rem;
+    font-weight: var(--light);
+}
+h2 span {
+    color: var(--orange);
+    font-size: 3rem;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-text p {
+    color:var(--sand);
+    font-size: 1rem;
+    font-weight: var(--light);
+    text-align: center;
+    line-height: 1.7rem;
+    padding: 10px;
+}
+.about-text p:first-of-type {
+    margin-bottom: 15px
+}
+
+.portfolio-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px;
+}
+.portfolio-container {
+    background-color: var(--medium-green);
+    padding: 45px;
+    border-radius: 20px;
+}
+
+.proyect {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.proyect a {
+    color: var(--sand);
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.proyect a img {
+    border-radius: 10px;
+    box-shadow: 1px 1px 15px var(--dargk-green);
+}
+
+.skills-section h2 {
+    text-align: center;
+}
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.skills-container img {
+    width: 30%;
+}
+.skills-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    border: 1px solid var(--medium-green);
+}
+.skills-item h3 {
+    font-size: 1.2rem;
+    font-weight: var(--medium);
+    color: var(--sand);
+    padding: 5px;
+}
+.skills-item p {
+    font-size: .9rem;
+    padding: 5px;
+    max-width: 150px;
+    text-align: center;
+    color: var(--sand);
+}
+
+.workflow-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto;
+}
+.workflow-container h3 {
+    font-size: 1.2rem;
+    color: var(--sand);
+    font-weight: var(--extra-light);
+    text-decoration:underline;
+    padding: 20px;
+}
+.workflow-container ul li {
+    text-align: center;
+    color: var(--sand);
+    font-size: 1rem;
+    padding: 10px;
+}
+.btn-cv {
+    background-color: var(--light-orange);
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    color: var(--deep-red);
+    font-weight: var(--medium);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.btn-cv:hover {
+    background-color:#883407;
+    color: var(--light-orange);
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+.btn-cv i {
+    font-size: 1.5rem;
+    color: var(--orange);
+}
+
+
+aside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+aside form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+aside form p {
+    display: none;
+}
+aside form .contact-txt {
+    border: 1px solid var(--orange);
+    border-radius: 5px;
+    background: transparent;
+    padding: 10px 15px;
+    margin:5px;
+    height: 50px;
+    width: 250px;
+}
+aside textarea {
+    width: 250px;
+    border: 1px solid var(--orange);
+    border-radius: 5px;
+    background: transparent;
+    padding: 10px 15px;
+    margin: 5px;
+}
+.contact-txt::placeholder {
+    color: var(--medium-green);
+    font-size: 1rem;
+}
+aside textarea::placeholder {
+    color: var(--medium-green);
+    font-size: 1rem;
+}
+form .btn-submit {
+    margin: 5px;
+    width: 100px;
+    height: 40px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: var(--orange);
+    border: none;
+    color: var(--sand);
+    font-size: 1rem;
+}
+form .btn-submit:hover {
+    background-color: #883407;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+aside .social-media-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+aside .social-media-container p {
+    color: var(--sand);
+    font-size: 1.2rem;
+    font-weight: var(--light);
+    margin: 30px auto 5px
+
+}
+aside .social-media-container img {
+    width: 10%;
+    cursor: pointer;
+}
+aside .icons-media {
+    width: 70%;
+    height:auto;
+    background-color: var(--medium-green);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+footer {
+    background-image: url("assets/symbol-scatter-haikei (1).svg");
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    gap: 30px;
+}
+footer p {
+    color: var(--sand);
+    font-size: 1.3rem;
+    padding-left: 10px;
+}
+footer a {
+    color: var(--orange);
+    font-size: 1.3rem;
+}
+footer a:hover {
+    color: var(--light-orange);
+    border-bottom: 2px solid var(--orange);
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+}
+
+
+
+
