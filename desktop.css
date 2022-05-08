@@ -40,6 +40,11 @@
         font-size: 1.1rem;
         padding: 15px 20px;
     }
+
+    .reviews-container {
+        flex-direction: row;
+    }
+
     aside {
         flex-direction: row;
         flex-wrap: wrap;
